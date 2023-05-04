@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+    <title>Weather Info</title>
+</head>
+
+<body>
+
+    {{>navbar}}
+    <div class="search">
+        <input type="text" id="cityname" placeholder="Enter your city name" autocomplete="off">
+        <input type="submit" value="Search" id="submitBtn">
+    </div>
+
+    <div class="tempInformation">
+        <div class="top_layer">
+            <p id="day">Tuesday</p>
+            <p id="today_data">25 Sep</p>
+        </div>
+        <div class="main_layer">
+            <p class="info">Get Output Here </p>
+            <div class="middle_layer data_hide" id="data">
+                <div style="display: flex;">
+                <p id="temp">0</p><p><sup>o</sup> C</p>
+                </div>
+                
+                <p id="temp_status"></p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
